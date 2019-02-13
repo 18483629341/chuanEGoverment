@@ -1,0 +1,41 @@
+.header {
+  height: 50px;
+  border: 1px solid yellow;
+}
+.section {
+  width: 1160px;
+  margin: 0 auto;
+  height: 1065px;
+  border: 1px solid yellow;
+}
+.section .headerSection {
+  height: 145px;
+  border: 1px solid yellow;
+}
+.section .mainContent {
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid yellow;
+}
+.section .topSection {
+  height: 372px;
+  border: 1px solid yellow;
+  margin-top: 20px;
+}
+.section .centerSection {
+  height: 320px;
+  border: 1px solid yellow;
+  margin-top: 8px;
+}
+.section .bottomSection {
+  height: 117px;
+  border: 1px solid yellow;
+}
+.section .leftRow {
+  width: 760px;
+  height: 100%;
+}
+.section .RightRow {
+  width: 380px;
+  height: 100%;
+}
