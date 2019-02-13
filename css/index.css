@@ -1,0 +1,269 @@
+@import 'common.css';
+@import 'main.css';
+/******header start*******/
+.MediaList {
+  height: 100%;
+}
+.MediaList .MediaLi {
+  display: inline-block;
+  width: 145px;
+  height: 100%;
+}
+.MediaList .MediaLi + .MediaLi {
+  border-left: 1px solid #e2e2e2;
+}
+.MediaList .MediaHref {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.MediaList .IconMedia {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  left: 13px;
+  top: -6px;
+}
+.MediaList .MediaText {
+  margin-left: 52px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  top: -2px;
+}
+.MediaList .MediaLi:first-child {
+  width: 130px;
+}
+.MediaList .MediaLi:first-child .MediaText {
+  margin-left: 47px;
+}
+.MediaList .MediaLi:first-child .IconWeibo {
+  left: 7px;
+  top: -6px;
+}
+.MediaList .IconWeibo {
+  background: url('../img/weibo.png') no-repeat;
+  background-size: 100% 100%;
+}
+.MediaList .IconWeixin {
+  background: url('../img/weixin.png') no-repeat;
+  background-size: 100% 100%;
+}
+.MediaList .IconPhone {
+  background: url('../img/phone.png') no-repeat;
+  background-size: 100% 100%;
+}
+.HeaderRightCon .MediaHref {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.HeaderRightCon .IconMedia {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  left: 13px;
+  top: -6px;
+}
+.HeaderRightCon .MediaText {
+  margin-left: 52px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  top: -2px;
+  font-size: 15px;
+}
+.HeaderRightCon .MediaText i {
+  font-style: normal;
+}
+.HeaderRightCon .IconCal {
+  background: url('../img/date.png') no-repeat;
+  background-size: 100% 100%;
+}
+/******header end*******/
+/******section start*******/
+/******headerSection start*******/
+.TitleDiv {
+  width: 709px;
+  height: 100%;
+  background: url('../img/logo_title.png') no-repeat;
+}
+.LoginDiv {
+  margin-top: 11px;
+  min-width: 142px;
+  height: 44px;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 22px;
+}
+.LoginText {
+  margin-top: -2px;
+  height: 100%;
+  line-height: 44px;
+  font-size: 18px;
+  color: #24a2f2;
+  font-weight: 700;
+  text-align: center;
+}
+/******mainContent start*******/
+.mainContent {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+.SelfIndicators {
+  text-align: right;
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+  padding-right: 13px;
+  bottom: 7px;
+}
+.SelfIndicators li {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 1px 3px 1px  1px;
+}
+.SelfIndicators .active {
+  background: #ffffff;
+  margin: 1px 3px 1px  1px;
+}
+.topSection .RightRow {
+  background: #fff;
+}
+.selfTabs {
+  height: 48px;
+}
+.selfTabs li.selfTab {
+  border-bottom: 3px solid #d3ecfc;
+}
+.selfTabs li.active > a {
+  border-bottom: 3px solid #1d95e0;
+}
+.selfTabs li + li {
+  margin-left: 0;
+}
+.selfTabs li.selfTab > a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #666666;
+  background: transparent;
+  border-radius: 0;
+}
+.selfTabs li.selfTab > a:focus,
+.selfTabs li.selfTab > a:hover,
+.selfTabs li.active > a:focus,
+.selfTabs li.active > a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.selfTabs li.active > a {
+  color: #1d95e0!important;
+  background: transparent;
+}
+.RightTableDiv {
+  padding: 0 20px!important;
+}
+.selfTable {
+  width: 100%;
+}
+.selfTable tr {
+  border-bottom: 1px dashed #e5ebf2;
+}
+.headerRightTable tr {
+  height: 70px;
+  padding: 13px 0;
+}
+.headerRightTable tr td:nth-child(1) {
+  width: 73px;
+  padding-right: 13px;
+}
+.headerRightTable tr td:nth-child(2) {
+  text-align: left;
+}
+.li-left {
+  width: 62px;
+  height: 48px;
+  text-align: center;
+  padding-top: 6px;
+  background: url('../img/part2_date.png') no-repeat;
+}
+.li-left .date {
+  font-size: 18px;
+  color: #333333;
+  line-height: 18px;
+}
+.li-left .year {
+  font-size: 14px;
+  color: #666666;
+}
+.li-heading {
+  position: relative;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: left;
+  overflow: hidden;
+}
+.p-after:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -moz-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(left, transparent, #fff 55%);
+  background: linear-gradient(to right, transparent, #fff 55%);
+}
+.moreDiv {
+  height: 35px;
+  padding: 10px 0;
+}
+.more {
+  margin-top: 2px;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  color: #999999;
+  text-align: center;
+}
+.more .moreIcon {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background: url('../img/more.png') no-repeat;
+  margin-left: 2px;
+}
+/******centerSection start*******/
+.centerSection .leftRow .insideRow {
+  width: 370px;
+  height: 100%;
+  border: 1px solid red;
+}
+.moreDiv2 {
+  height: 46px;
+  padding: 14px 0;
+}
+.moreDiv2 .more {
+  padding-right: 18px;
+  text-align: right;
+}
+.headLineList {
+  overflow: hidden;
+}
+.headLineLi {
+  width: 100%;
+  height: 42px;
+  padding: 14px 0;
+}
+.headLineLi .lineMarkIcon {
+  width: 20px;
+}
+.headLineLi .headLine {
+  width: 236px;
+}
+/******section end*******/
