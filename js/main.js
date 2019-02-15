@@ -1,4 +1,3 @@
-
 function onlyTwoLine(tag){
 	$(tag).each(function (i, obj) {
 		//返回到最初的样式；

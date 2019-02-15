@@ -174,13 +174,15 @@
 .selfCarouselCaption{
 	width:730px;
 	margin: 0 auto;
-	background: rgba(0, 0, 0,.3);
+	background: rgba(0, 0, 0,.35);
 	overflow: hidden;
 	padding:8px 20px 12px;
 	
 	text-align: left;
 	bottom: 36px;
-	
+	.linkA{
+		color:#fff;
+	}
 	.selfTitle{
 	   font-size:22px;
 	   line-height: 38px;
@@ -191,10 +193,19 @@
 		line-height: 22px;
 		color:#e3e3e3;
 	}
+	.linkA:hover{
+		color:#fff;
+	}
 	.headTwoLine.p-after:after{
 		color:#e3e3e3;
 		background: transparent;
 		
+	}
+}
+.selfCarouselCaption:hover{
+	background: rgba(0, 0, 0,.5);
+	.linkA{
+		color:#fff;
 	}
 }
 .topSection .RightRow{
@@ -206,6 +217,7 @@
 		border-bottom: 3px solid #d3ecfc;
 	}
 	li.selfTab:hover{
+		//border:none;
 		.RightTableDiv{
 			padding:0 20px!important;
 			display: none;
@@ -335,17 +347,17 @@
 .headLineLi{
 	width: 100%;
 	height: 42px;
-	padding: 14px 0;
+	padding: 10px 0;
 	.lineMarkIcon{
 		width:8px;
 		height:8px;
 		margin-right: 10px;
-		margin-top:3px; 
+		margin-top:7px; 
 		background: url('../img/list_li.png') no-repeat;
 	}
 	.headLine{
 		width:220px;
-		line-height: 14px;
+		line-height: 22px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		-o-text-overflow: ellipsis;
@@ -359,7 +371,7 @@
 	} 
 	.date{
 		width: 80px;
-		line-height: 14px;
+		line-height: 22px;
 		text-align: right;
 		color: @lightTextColor;
 	}
@@ -430,29 +442,25 @@
 		border: 1px solid @splitColor;
 		width: 100%;
 		max-height:228px;
-		// display: none;
+		display: none;
 		bottom:45px;
 		left: 0;
 		box-shadow: 0px 0px 7px 4px rgba(143, 194, 225, 0.3);
 	}
 	
 	.ContentList{
-		// border: 1px solid red;
 	}
 	.ContentLi{
 		height:45px;
-		//border: 1px solid yellow;
-		
 		.linkA{
 			background: #fff;
-			width: 200px;
+			width:100%;
 			padding:15px 0 12px 20px; 
 			color: @mainTextColor;
 			line-height: 14px;
 		}
 	}
 	.ContentLi:hover{
-		
         .linkA{
 			background: #24a2f2;
 			color:#fff;
@@ -496,29 +504,28 @@
 /******footer end*******/
 /******滚动条 start*******/
 .mCSB_inside > .mCSB_container {
-    margin-right: 25px;
+    margin-right: 0px;
 }
 .mCSB_scrollTools{
-	background: rgba(255,255,255,1);
-}
-.mCSB_scrollTools .mCSB_draggerRail {
-	width: 7px;
+	background-color: rgba(255, 255, 255,1);
+	width: 4px;
+	.mCSB_draggerRail {
+		width: 100%;
+		background:transparent;
+	}
 }
 .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
 	margin:0;
-	width:7px;
-	// margin-right: -10px;
+	width:100%; 
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-   // background-color: #c9d4e0!important;
-    background-color: rgba(100, 233, 244,.9);
-    filter: "alpha(opacity=90)";
-	-ms-filter: "alpha(opacity=90)";
-
+    background-color: rgba(201, 212, 224,1);
+    filter: "alpha(opacity=100)";
+	-ms-filter: "alpha(opacity=100)";
+	border-radius:2px;
 }
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    //background-color:#c9d4e0!important;
-    background-color: rgba(100, 233, 244, 1);
-     filter: "alpha(opacity=85)";
-    -ms-filter: "alpha(opacity=85)";
+    background-color: rgba(183, 206, 230, 1);
+     filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
 }
