@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>电子政务</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+</head>
+
+<body class="body0">
+	<div>
+		<header class="header">
+			<div class="headerMain">
+				<div class="HeaderLeftCon floatLeft">
+					<ol class="MediaList">
+						<li class="MediaLi">
+							<a href="#" class="MediaHref">
+								<i class="IconMedia IconWeibo"></i>
+								<span class="MediaText">政务微博</span>
+							</a>
+						</li>
+						<li class="MediaLi">
+							<a href="#" class="MediaHref">
+								<i class="IconMedia IconWeixin"></i>
+								<span class="MediaText">政务微信</span>
+							</a>
+						</li>
+						<li class="MediaLi">
+							<a href="#" class="MediaHref">
+								<i class="IconMedia IconPhone"></i>
+								<span class="MediaText">手机客户端</span>
+							</a>
+						</li>
+					</ol>
+				</div>
+				<div class="HeaderRightCon floatRight">
+					<div class="MediaHref">
+						<i class="IconMedia IconCal"></i>
+						<span class="MediaText">今天是
+							<i>2018年12月14日</i>
+							<i>星期五</i>
+						</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="section">
+			<div class="headerSection">
+				<div class="TitleDiv floatLeft"></div>
+				<div class="LoginDiv floatRight">
+					<p class="LoginText">CA登录</p>
+				</div>
+			</div>
+			<div class="mainContent">
+				<div class="topSection">
+					<div id="carousel01" class="leftRow floatLeft carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators SelfIndicators">
+							<li data-target="#carousel01" data-slide-to="0" class="circle active"></li>
+							<li data-target="#carousel01" data-slide-to="1" class="circle"></li>
+							<li data-target="#carousel01" data-slide-to="2" class="circle"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="./img/carousel0.png" alt="...">
+								<div class="carousel-caption">
+									1
+								</div>
+							</div>
+							<div class="item">
+								<img src="./img/carousel0.png" alt="...">
+								<div class="carousel-caption">
+									2
+								</div>
+							</div>
+							<div class="item">
+								<img src="./img/carousel0.png" alt="...">
+								<div class="carousel-caption">
+									3
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="RightRow floatRight">
+						<!-- tabs -->
+						<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
+							<li role="presentation" class="selfTab active">
+								<a href="#news" role="tab" data-toggle="tab">综合新闻</a>
+							</li>
+							<li role="presentation" class="selfTab ">
+								<a href="#leaderTalk" role="tab" data-toggle="tab">领导讲话</a>
+							</li>
+							<li role="presentation" class="disabled selfTab flex1">
+								<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
+							</li>
+
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel " class="tab-pane RightTableDiv active" id="news">
+								<table class="selfTable headerRightTable">
+									<tbody>
+										<tr>
+											<td>
+												<div class="li-left ">
+													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<p class="year">2018</p>
+												</div>
+											</td>
+											<td align="middle">
+												<p class="li-heading">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="li-left ">
+													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<p class="year">2018</p>
+												</div>
+											</td>
+											<td align="middle">
+												<p class="li-heading">我省举行突发环境事件（Ⅲ级）应急演练</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="li-left ">
+													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<p class="year">2018</p>
+												</div>
+											</td>
+											<td align="middle">
+												<p class="li-heading">全国人大环资委和生态环境部联合召开土壤 污染防治法实施座谈会 切实抓好土壤污染要务</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="li-left ">
+													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<p class="year">2018</p>
+												</div>
+											</td>
+											<td align="middle">
+												<p class="li-heading">四川省政府党组召开（扩大）会议 传达学习 贯彻省委十一届四次全会精神</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="moreDiv">
+									<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane RightTableDiv" id="leaderTalk">
+								<table class="selfTable headerRightTable">
+									<tbody>
+										<tr>
+											<td>
+												<div class="li-left ">
+													<h2 class="date"><span>02</span>-<span>13</span></h2>
+													<p class="year">2019</p>
+												</div>
+											</td>
+											<td align="middle">
+												<p class="li-heading">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动</p>
+											</td>
+										</tr>
+												
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="centerSection">
+					<div class="leftRow floatLeft">
+						<div class="insideRow floatLeft">
+							<!-- tabs -->
+							<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
+								<li role="presentation" class="selfTab active">
+									<a href="#MeetingNotice" role="tab" data-toggle="tab">会议通知</a>
+								</li>
+								<li role="presentation" class="selfTab ">
+									<a href="#NoticePublicity"  role="tab" data-toggle="tab">公示公告</a>
+								</li>
+								<li role="presentation" class="selfTab ">
+									<a href="#cadresAppiont"  role="tab" data-toggle="tab">干部任免</a>
+								</li>
+								<li role="presentation" class="disabled selfTab flex1">
+									<div class="moreDiv moreDiv2">
+										<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+									</div>
+									<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
+								</li>
+
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel " class="tab-pane RightTableDiv active" id="MeetingNotice">
+									<ol class="headLineList">
+										<li class="headLineLi">
+											<i class="lineMarkIcon"></i>
+											<span class="headLine">xixi</span>
+											<span class="date">2019-02-13</span>
+										</li>
+									</ol>
+								</div>
+								<div role="tabpanel " class="tab-pane RightTableDiv " id="NoticePublicity">
+									2	
+								</div>
+								<div role="tabpanel " class="tab-pane RightTableDiv " id="cadresAppiont">
+									3	
+								</div>
+ 
+							</div>
+						</div>
+						<div class="insideRow floatRight">
+							<!-- tabs -->
+							<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
+								<li role="presentation" class="selfTab active">
+									<a href="#loadCenter" role="tab" data-toggle="tab">下载中心</a>
+								</li>
+								<li role="presentation" class="disabled selfTab flex1">
+									<div class="moreDiv moreDiv2">
+										<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+									</div>
+									<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel " class="tab-pane RightTableDiv active" id="loadCenter">
+									1
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="RightRow floatRight"></div>
+				</div>
+				<div class="bottomSection">
+
+				</div>
+			</div>
+
+		</section>
+		<footer class="footer">
+
+		</footer>
+	</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

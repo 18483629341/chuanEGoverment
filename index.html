@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>电子政务</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="./css/index.css" />
 
@@ -17,32 +19,41 @@
 				<div class="HeaderLeftCon floatLeft">
 					<ol class="MediaList">
 						<li class="MediaLi">
-							<a href="#" class="MediaHref">
-								<i class="IconMedia IconWeibo"></i>
-								<span class="MediaText">政务微博</span>
-							</a>
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+									<i class="IconMedia IconWeibo"></i>
+									<span class="MediaText">政务微博</span>
+								</a>
+							</div>
 						</li>
 						<li class="MediaLi">
-							<a href="#" class="MediaHref">
-								<i class="IconMedia IconWeixin"></i>
-								<span class="MediaText">政务微信</span>
-							</a>
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+
+									<i class="IconMedia IconWeixin"></i>
+									<span class="MediaText">政务微信</span>
+								</a>
+							</div>
 						</li>
 						<li class="MediaLi">
-							<a href="#" class="MediaHref">
-								<i class="IconMedia IconPhone"></i>
-								<span class="MediaText">手机客户端</span>
-							</a>
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+									<i class="IconMedia IconPhone"></i>
+									<span class="MediaText">手机客户端</span>
+								</a>
+							</div>
 						</li>
 					</ol>
 				</div>
 				<div class="HeaderRightCon floatRight">
-					<div class="MediaHref">
-						<i class="IconMedia IconCal"></i>
-						<span class="MediaText">今天是
-							<i>2018年12月14日</i>
-							<i>星期五</i>
-						</span>
+					<div class="MediaLiContent">
+						<div class="MediaHref">
+							<i class="IconMedia IconCal"></i>
+							<span class="MediaText">今天是
+								<i>2018年12月14日</i>
+								<i>星期五</i>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -51,12 +62,14 @@
 			<div class="headerSection">
 				<div class="TitleDiv floatLeft"></div>
 				<div class="LoginDiv floatRight">
-					<p class="LoginText">CA登录</p>
+					<a href="#" class="linkA">
+						<p class="LoginText">CA登录</p>
+					</a>
 				</div>
 			</div>
 			<div class="mainContent">
 				<div class="topSection">
-					<div id="carousel01" class="leftRow floatLeft carousel slide" data-ride="carousel">
+					<div id="carousel01" class="leftRow floatLeft carousel slide" >
 						<!-- Indicators -->
 						<ol class="carousel-indicators SelfIndicators">
 							<li data-target="#carousel01" data-slide-to="0" class="circle active"></li>
@@ -68,19 +81,20 @@
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<img src="./img/carousel0.png" alt="...">
-								<div class="carousel-caption">
-									1
+								<div class="carousel-caption selfCarouselCaption">
+									<h2 class="selfTitle">生态环境厅机关党委书记龙仕荣赴松潘县开展精准扶贫慰问调研</h2>
+									<p class="li-heading headTwoLine">12月4日—5日，生态环境厅机关党委书记、党组成员龙仕荣率机关党办、人事处一行深入定点扶贫松潘县调研脱 贫攻坚工作，看望帮扶贫成员龙仕荣率机关党办、人事处一行深入定点扶贫松潘县调研脱 贫攻成员龙仕荣率机关党办、人事处一行深入定点扶贫松潘县调研脱 贫攻</p>
 								</div>
 							</div>
 							<div class="item">
 								<img src="./img/carousel0.png" alt="...">
-								<div class="carousel-caption">
+								<div class="carousel-caption selfCarouselCaption">
 									2
 								</div>
 							</div>
 							<div class="item">
 								<img src="./img/carousel0.png" alt="...">
-								<div class="carousel-caption">
+								<div class="carousel-caption selfCarouselCaption">
 									3
 								</div>
 							</div>
@@ -109,51 +123,75 @@
 										<tr>
 											<td>
 												<div class="li-left ">
-													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<h2 class="date">
+														<span>12</span>-
+														<span>14</span>
+													</h2>
 													<p class="year">2018</p>
 												</div>
 											</td>
 											<td align="middle">
-												<p class="li-heading">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动</p>
+												<p class="li-heading">
+													<a href="#">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动</a>
+												</p>
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<div class="li-left ">
-													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<h2 class="date">
+														<span>12</span>-
+														<span>14</span>
+													</h2>
 													<p class="year">2018</p>
 												</div>
 											</td>
 											<td align="middle">
-												<p class="li-heading">我省举行突发环境事件（Ⅲ级）应急演练</p>
+												<p class="li-heading">
+													<a href="#">我省举行突发环境事件（Ⅲ级）应急演练</a>
+												</p>
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<div class="li-left ">
-													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<h2 class="date">
+														<span>12</span>-
+														<span>14</span>
+													</h2>
 													<p class="year">2018</p>
 												</div>
 											</td>
 											<td align="middle">
-												<p class="li-heading">全国人大环资委和生态环境部联合召开土壤 污染防治法实施座谈会 切实抓好土壤污染要务</p>
+												<p class="li-heading">
+													<a href="#">全国人大环资委和生态环境部联合召开土壤 污染防治法实施座谈会 切实抓好土壤污染要务</a>
+												</p>
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<div class="li-left ">
-													<h2 class="date"><span>12</span>-<span>14</span></h2>
+													<h2 class="date">
+														<span>12</span>-
+														<span>14</span>
+													</h2>
 													<p class="year">2018</p>
 												</div>
 											</td>
 											<td align="middle">
-												<p class="li-heading">四川省政府党组召开（扩大）会议 传达学习 贯彻省委十一届四次全会精神</p>
+												<p class="li-heading">
+													<a href="#">四川省政府党组召开（扩大）会议 传达学习 贯彻省委十一届四次全会精神</a>
+												</p>
 											</td>
 										</tr>
 									</tbody>
 								</table>
 								<div class="moreDiv">
-									<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+									<p class="more">
+										<a href="#">更多
+											<i class="moreIcon"></i>
+										</a>
+									</p>
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane RightTableDiv" id="leaderTalk">
@@ -162,20 +200,25 @@
 										<tr>
 											<td>
 												<div class="li-left ">
-													<h2 class="date"><span>02</span>-<span>13</span></h2>
+													<h2 class="date">
+														<span>02</span>-
+														<span>13</span>
+													</h2>
 													<p class="year">2019</p>
 												</div>
 											</td>
 											<td align="middle">
-												<p class="li-heading">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动</p>
+												<p class="li-heading">
+													<a href="#">自然保护区内发现141处新增或规模扩大人 类活动变化情况生态环境部组织开展实地活动5</a>
+												</p>
 											</td>
 										</tr>
-												
+
 									</tbody>
 								</table>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 				<div class="centerSection">
@@ -187,14 +230,19 @@
 									<a href="#MeetingNotice" role="tab" data-toggle="tab">会议通知</a>
 								</li>
 								<li role="presentation" class="selfTab ">
-									<a href="#NoticePublicity"  role="tab" data-toggle="tab">公示公告</a>
+									<a href="#NoticePublicity" role="tab" data-toggle="tab">公示公告</a>
 								</li>
 								<li role="presentation" class="selfTab ">
-									<a href="#cadresAppiont"  role="tab" data-toggle="tab">干部任免</a>
+									<a href="#cadresAppiont" role="tab" data-toggle="tab">干部任免</a>
 								</li>
+								<!-- 最后一个li用来显示 ‘更多’，与左边不一样 -->
 								<li role="presentation" class="disabled selfTab flex1">
 									<div class="moreDiv moreDiv2">
-										<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+										<p class="more">
+											<a href="#">更多
+												<i class="moreIcon"></i>
+											</a>
+										</p>
 									</div>
 									<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
 								</li>
@@ -203,20 +251,69 @@
 							<div class="tab-content">
 								<div role="tabpanel " class="tab-pane RightTableDiv active" id="MeetingNotice">
 									<ol class="headLineList">
-										<li class="headLineLi">
-											<i class="lineMarkIcon"></i>
-											<span class="headLine">xixi</span>
-											<span class="date">2019-02-13</span>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">我省举行突发环境事件（Ⅲ级）应什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">我省举行突发环境事件（Ⅲ级）应什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
 										</li>
 									</ol>
 								</div>
 								<div role="tabpanel " class="tab-pane RightTableDiv " id="NoticePublicity">
-									2	
+									2
 								</div>
 								<div role="tabpanel " class="tab-pane RightTableDiv " id="cadresAppiont">
-									3	
+									3
 								</div>
- 
+
 							</div>
 						</div>
 						<div class="insideRow floatRight">
@@ -227,33 +324,191 @@
 								</li>
 								<li role="presentation" class="disabled selfTab flex1">
 									<div class="moreDiv moreDiv2">
-										<p class="more"><a href="#">更多<i class="moreIcon"></i></a> </p>
+										<p class="more">
+											<a href="#">更多
+												<i class="moreIcon"></i>
+											</a>
+										</p>
 									</div>
 									<!-- <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a> -->
 								</li>
 							</ul>
 							<div class="tab-content">
 								<div role="tabpanel " class="tab-pane RightTableDiv active" id="loadCenter">
-									1
+									<ol class="headLineList">
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">我省举行突发环境事件（Ⅲ级）应什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">我省举行突发环境事件（Ⅲ级）应什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+										<li class="headLineLi flexBlock">
+											<div class="lineMarkIcon"></div>
+											<div class="headLine">
+												<a href="#">
+													<span class="text">自然保护区内发现141处新增或规定什么什么</span>
+												</a>
+											</div>
+											<div class="date flex1">2019-02-13</div>
+										</li>
+									</ol>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="RightRow floatRight"></div>
+					<div class="RightRow floatRight relativeSystemList">
+						<div class="item  SpecialFunds">
+							<a href="#" class="linkA"></a>
+						</div>
+						<div class="item  WebsiteEditing">
+							<a href="#" class="linkA"></a>
+						</div>
+						<div class="item  SoilEnvironment">
+							<a href="#" class="linkA"></a>
+						</div>
+						<div class="item  NuclearRadiationSafety">
+							<a href="#" class="linkA"></a>
+						</div>
+					</div>
 				</div>
 				<div class="bottomSection">
+					<ul class="nav nav-pills selfTabs flexBlock" role="tablist">
+						<li role="presentation" class="selfTab active">
+							<a href="#news" role="tab" data-toggle="tab">友情链接</a>
+						</li>
+						<!-- <li role="presentation" class="disabled selfTab flex1">
+							<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+						</li> -->
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel " class="tab-pane contentDiv active" id="MeetingNotice">
+							<ul class="selectList flexBlock">
+								<li class="selectLi ">
+									<div class="flexBlock">
+										<p class="flex1 selectLiTitle">直属单位</p>
+										<span class="downIcon"></span>
+									</div>
+									<div id="content-1" class="content selectContent">
+										<ul class="ContentList">
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="flex1"></li>
+								<li class="selectLi ">
+									<div class="flexBlock">
+										<p class="flex1 selectLiTitle">国内环保</p>
+										<span class="downIcon"></span>
+									</div>
+									<div class="selectContent">
+										<ul class="ContentList" id="selectContent1">
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+											<li class="ContentLi">
+												<a href="#" class="linkA">国内环保</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="flex1"></li>
+								<li class="selectLi ">
+									<div class="flexBlock">
+										<p class="flex1 selectLiTitle">省内环保</p>
+										<span class="downIcon"></span>
+									</div>
+								</li>
+								<li class="flex1"></li>
+								<li class="selectLi ">
+									<div class="flexBlock">
+										<p class="flex1 selectLiTitle">环保相关</p>
+										<span class="downIcon"></span>
+									</div>
+								</li>
+								<li class="flex1"></li>
+								<li class="selectLi ">
+									<div class="flexBlock">
+										<p class="flex1 selectLiTitle">其他</p>
+										<span class="downIcon"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 
 				</div>
 			</div>
 
 		</section>
 		<footer class="footer">
-
+			<div class="footerSection">
+				<p>
+					<span class="footerText">版权所有：四川生态环境厅</span>
+					<span class="footerText">技术支持：四川环境信息中心</span>
+				</p>
+			</div>
 		</footer>
 	</div>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/index.js"></script>
 

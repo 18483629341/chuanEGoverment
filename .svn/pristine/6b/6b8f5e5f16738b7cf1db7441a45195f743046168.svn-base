@@ -8,6 +8,7 @@
 .header .headerMain {
   width: 1200px;
   margin: 0 auto;
+  padding: 13px 0;
   height: 100%;
 }
 .header .HeaderLeftCon {
@@ -38,14 +39,15 @@
 }
 .section .topSection {
   height: 372px;
-  margin-bottom: 20px;
 }
 .section .centerSection {
   height: 320px;
-  overflow: hidden;
+  border: 1px solid yellow;
+  margin-top: 8px;
 }
 .section .bottomSection {
-  height: 136px;
+  height: 117px;
+  border: 1px solid yellow;
 }
 .section .leftRow {
   width: 760px;
@@ -54,9 +56,9 @@
 .section .RightRow {
   width: 380px;
   height: 100%;
+  border: 1px solid blue;
 }
 .footer {
   height: 60px;
-  background: #e9f1f5;
-  border-top: 1px solid #0c9cef;
+  border: 1px solid blue;
 }

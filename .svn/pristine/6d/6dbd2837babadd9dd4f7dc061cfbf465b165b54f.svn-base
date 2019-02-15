@@ -83,12 +83,8 @@ table{
 .alignRight{
 	text-align: right!important;
 }
-a{
+a,a:hover,a:link{
 	color: #333;
 	text-decoration: none;
 }
 
-a:hover,a:link{
-	color: #1a7ee2;
-	text-decoration: none;
-}

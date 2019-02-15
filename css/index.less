@@ -30,6 +30,7 @@
 		top: -2px;
 	}
 }
+
 /******header start*******/
 .MediaList{
 	height: 100%;
@@ -37,10 +38,16 @@
 		display:inline-block;
 		width: 145px;
 		height: 100%;
-		
+		padding: 13px 0;
+	}
+	.MediaLi:hover{
+		background: #fff;
 	}
 	.MediaLi+.MediaLi{
-		border-left: 1px solid #e2e2e2;
+		margin-left: -4px;
+		.MediaLiContent{
+			border-left: 1px solid #e2e2e2;
+		}
 	}
 	.MediaHref{
 		#selfIcon.MediaHref();
@@ -58,7 +65,6 @@
 		}
 		.IconWeibo{
 			left: 7px;
-			top: -6px;
 		}
 	}
 	.IconWeibo{
@@ -75,6 +81,7 @@
 	}
 }
 .HeaderRightCon{
+	padding: 13px 0;
 	.MediaHref{
 		#selfIcon.MediaHref();
 	}
@@ -109,6 +116,10 @@
 	background: #fff;
 	border-radius: 22px;
 }
+.LoginDiv:hover{
+	transform: translateY(-1px);
+	box-shadow: 0px 2px 5px 3px rgba(27, 28, 51, 0.2);
+}
 .LoginText{
 	margin-top: -2px;
 	height:100%;
@@ -117,6 +128,17 @@
 	color:@activeColor;
 	font-weight: 700;
 	text-align: center;
+}
+.p-after:after {
+	content: "...";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-left: 40px;
+	background: -webkit-linear-gradient(left, transparent, #fff 55%);
+	background: -moz-linear-gradient(left, transparent, #fff 55%);
+	background: -o-linear-gradient(left, transparent, #fff 55%);
+	background: linear-gradient(to right, transparent, #fff 55%);
 }
 	/******mainContent start*******/
 .mainContent{
@@ -143,6 +165,38 @@
 		margin:1px 3px 1px  1px;
 	}
 }
+@media screen and (min-width: 768px){
+	.selfCarouselCaption {
+		right: 0!important; 
+		left:0!important; 
+	}
+}
+.selfCarouselCaption{
+	width:730px;
+	margin: 0 auto;
+	background: rgba(0, 0, 0,.3);
+	overflow: hidden;
+	padding:8px 20px 12px;
+	
+	text-align: left;
+	bottom: 36px;
+	
+	.selfTitle{
+	   font-size:22px;
+	   line-height: 38px;
+	   color:#fff;
+	}
+	.li-heading{
+		font-size:14px;
+		line-height: 22px;
+		color:#e3e3e3;
+	}
+	.headTwoLine.p-after:after{
+		color:#e3e3e3;
+		background: transparent;
+		
+	}
+}
 .topSection .RightRow{
 	background:#fff; 
 }
@@ -150,6 +204,12 @@
 	height:48px;
 	li.selfTab{
 		border-bottom: 3px solid #d3ecfc;
+	}
+	li.selfTab:hover{
+		.RightTableDiv{
+			padding:0 20px!important;
+			display: none;
+		}
 	}
 	li.active>a{
 		border-bottom: 3px solid #1d95e0;
@@ -173,8 +233,10 @@
 		background: transparent;
 	}
 }
+
 .RightTableDiv{
 	padding:0 20px!important;
+	display: none;
 }
 .selfTable{
 	width: 100%;
@@ -183,6 +245,7 @@
 	}
 	
 }
+
 .headerRightTable{
 	tr{
 		height: 70px;
@@ -223,17 +286,7 @@
 	overflow: hidden;
 }
 
-.p-after:after {
-	content: "...";
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding-left: 40px;
-	background: -webkit-linear-gradient(left, transparent, #fff 55%);
-	background: -moz-linear-gradient(left, transparent, #fff 55%);
-	background: -o-linear-gradient(left, transparent, #fff 55%);
-	background: linear-gradient(to right, transparent, #fff 55%);
-}
+
 .moreDiv{
    height:35px;
    padding: 10px 0;
@@ -256,12 +309,16 @@
 /******centerSection start*******/
 .centerSection{
    .leftRow{
+	   
 	   .insideRow{
 		width: 370px;
-		height:100%;
-		border: 1px solid red;
+		height:310px;
+		background: #fff;
 	   }
    }
+   .rightRow{
+		background: #fff;
+	}
 }
 .moreDiv2{
 	height: 46px;
@@ -273,19 +330,195 @@
 }
 .headLineList{
    overflow: hidden;
+   padding-top:3px;
 }
 .headLineLi{
 	width: 100%;
 	height: 42px;
 	padding: 14px 0;
 	.lineMarkIcon{
-		width:20px;
+		width:8px;
+		height:8px;
+		margin-right: 10px;
+		margin-top:3px; 
+		background: url('../img/list_li.png') no-repeat;
 	}
 	.headLine{
-		width:236px;
-	}
+		width:220px;
+		line-height: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-webkit-text-overflow: ellipsis;
+		-moz-text-overflow: ellipsis;
+		white-space: nowrap;	
+		color: @mainTextColor;
+		// .text:hover{
+		// 	color: #1a7ee2;
+		// }
+	} 
 	.date{
-
+		width: 80px;
+		line-height: 14px;
+		text-align: right;
+		color: @lightTextColor;
 	}
 }
+.headLineLi+.headLineLi{
+    border-top:1px dashed @splitColor;
+}
+.linkA{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.relativeSystemList{
+	.item{
+		width:380px;
+		height:70px;
+		margin-bottom:10px;
+	}
+	.SpecialFunds{
+		background: url('../img/pic1.png') no-repeat;
+	}
+	.WebsiteEditing{
+		background: url('../img/pic2.png') no-repeat;
+	}
+	.SoilEnvironment{
+		background: url('../img/pic3.png') no-repeat;
+	}
+	.NuclearRadiationSafety{
+		background: url('../img/pic4.png') no-repeat;
+	}
+}
+
+	/******bottomSection start*******/
+.bottomSection{
+   border: 1px solid @splitColor;
+   background: #fff;
+    .contentDiv{
+		height:88px;
+		padding:21px 20px;
+    }
+}
+.selectList{
+	height:46px;
+	
+	.selectLi{
+		height:46px;
+		width: 210px;
+		border: 1px solid @splitColor;
+		padding: 15px 16px;
+		background: #f5f8fb;
+		position: relative;
+	}
+	.selectLiTitle{
+		line-height: 14px;
+	}
+	/******selectContent start*******/
+	.selectLi:hover{
+		.selectContent{
+			display:block;
+		}
+		.downIcon{
+			transform: rotate(0deg);	
+		}
+	}
+	.selectContent{
+		position: absolute;
+		background: #f5f8fb;
+		border: 1px solid @splitColor;
+		width: 100%;
+		max-height:228px;
+		// display: none;
+		bottom:45px;
+		left: 0;
+		box-shadow: 0px 0px 7px 4px rgba(143, 194, 225, 0.3);
+	}
+	
+	.ContentList{
+		// border: 1px solid red;
+	}
+	.ContentLi{
+		height:45px;
+		//border: 1px solid yellow;
+		
+		.linkA{
+			background: #fff;
+			width: 200px;
+			padding:15px 0 12px 20px; 
+			color: @mainTextColor;
+			line-height: 14px;
+		}
+	}
+	.ContentLi:hover{
+		
+        .linkA{
+			background: #24a2f2;
+			color:#fff;
+		}
+	}
+	/******selectContent end*******/
+}
+
+.downIcon{
+	display: inline-block;
+	width: 10px ;
+	height:6px;
+	position: relative;
+	top:4px;
+	background: url('../img/friendlylink_xl.png') no-repeat;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+.border{
+	border: 1px solid yellow;
+}
+.bottomSection .selfTabs{
+	border-bottom: 1px solid @splitColor;
+}
 /******section end*******/
+/******footer start*******/
+.footerSection{
+	text-align: center;
+	color:#333;	
+
+	
+	padding:18px 0;
+}
+.footerText{
+	line-height: 14px;
+}
+.footerText+.footerText{
+	margin-left:20px;
+}
+/******footer end*******/
+/******滚动条 start*******/
+.mCSB_inside > .mCSB_container {
+    margin-right: 25px;
+}
+.mCSB_scrollTools{
+	background: rgba(255,255,255,1);
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 7px;
+}
+.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+	margin:0;
+	width:7px;
+	// margin-right: -10px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+   // background-color: #c9d4e0!important;
+    background-color: rgba(100, 233, 244,.9);
+    filter: "alpha(opacity=90)";
+	-ms-filter: "alpha(opacity=90)";
+
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    //background-color:#c9d4e0!important;
+    background-color: rgba(100, 233, 244, 1);
+     filter: "alpha(opacity=85)";
+    -ms-filter: "alpha(opacity=85)";
+}
