@@ -20,7 +20,7 @@
 }
 .section {
   height: 1065px;
-  background: url('../img/bg_02.png') no-repeat;
+  background: url('../img/bg_01.png') no-repeat;
   background-size: 100% auto;
 }
 .section .headerSection,
@@ -58,5 +58,5 @@
 .footer {
   height: 60px;
   background: #e9f1f5;
-  border-top: 1px solid #0c9cef;
+  border-top: 2px solid #0c9cef;
 }

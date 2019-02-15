@@ -1,20 +1,29 @@
+var flag=true;
+var heightArr=[];
 function onlyTwoLine(tag){
+	var lineHeight=null;
+	var height=null;
 	$(tag).each(function (i, obj) {
-		//返回到最初的样式；
-		$(this).removeClass("p-after")
-		$(this).css("height", "initial");
-		//
-		var lineHeight = parseInt($(this).css("line-height"));
-		var height = parseInt($(this).height());
-		console.log(i,$(this),$(this).height(),lineHeight);
-		
-
-		if ((height / lineHeight) > 2) {
-			console.log("addClass");
+		if(flag){
+			height = parseInt($(this).height());
+			heightArr.push(height);
+		}else{
+            //返回到最初的样式；
+			$(this).removeClass("p-after")
+			if(!heightArr[i]){//如果为0，就重新获得高度
+				heightArr[i]=parseInt($(this).height());
+			}
+		}
+	
+		lineHeight = parseInt($(this).css("line-height"));
+		if ((heightArr[i] / lineHeight) > 2) {
+			
 			$(this).addClass("p-after")
 			$(this).css("height", "46px");
 		} else {
 			$(this).removeClass("p-after");
 		}
 	});
+	
+	flag=false;
 }
