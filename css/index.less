@@ -7,6 +7,7 @@
 @perFontSize:14px;
 @splitColor:#e5ebf2;
 @activeColor:#24a2f2;
+@iconBackground: url('../img/sprite.png') no-repeat;
 #selfIcon(){
 	.MediaHref{
 		display: block;
@@ -21,6 +22,7 @@
 		height:32px;
 		left: 13px;
 		top: -6px;
+		background: @iconBackground;
 	}
 	.MediaText{
 		margin-left: 52px;
@@ -68,16 +70,13 @@
 		}
 	}
 	.IconWeibo{
-		background: url('../img/weibo.png') no-repeat;
-		background-size: 100% 100%;
+		background-position:0 0;
 	}
 	.IconWeixin{
-		background: url('../img/weixin.png') no-repeat;
-		background-size: 100% 100%;
+		background-position: -32px 0;
 	}
 	.IconPhone{
-		background: url('../img/phone.png') no-repeat;
-		background-size: 100% 100%;
+		background-position: -64px 0;
 	}
 }
 .HeaderRightCon{
@@ -96,8 +95,7 @@
 		}
 	}
 	.IconCal{
-		background: url('../img/date.png') no-repeat;
-		background-size: 100% 100%;
+		background-position: -96px 0;
 	}
 }
 /******header end*******/
@@ -277,7 +275,8 @@
 	height: 48px;
 	text-align: center;
 	padding-top: 6px;
-	background: url('../img/part2_date.png') no-repeat;
+	background: @iconBackground;
+	background-position: 0 -50px;
 	.date{
 		font-size: @titleFontSize;
 		color:@mainTextColor;
@@ -314,14 +313,16 @@
 		display: inline-block;
 		width: 11px;
 		height:10px;
-		background: url('../img/more.png') no-repeat;
+		background: @iconBackground;
+		background-position: -24px -32px;
 		margin-left: -2px;
 	}
 }
 .more:hover{
 	color: rgb(67,152,238);
     .moreIcon{
-		background: url('../img/more_hover.png') no-repeat;
+		//background: @iconBackground;
+		background-position: -36px -32px;
 	}
 }
 /******centerSection start*******/
@@ -363,7 +364,8 @@
 		height:8px;
 		margin-right: 10px;
 		margin-top:7px; 
-		background: url('../img/list_li.png') no-repeat;
+		background: @iconBackground;
+		background-position: -12px -32px;
 	}
 	.headLine{
 		width:220px;
@@ -375,9 +377,6 @@
 		-moz-text-overflow: ellipsis;
 		white-space: nowrap;	
 		color: @mainTextColor;
-		// .text:hover{
-		// 	color: #1a7ee2;
-		// }
 	} 
 	.date{
 		width: 80px;
@@ -485,7 +484,8 @@
 	height:6px;
 	position: relative;
 	top:4px;
-	background: url('../img/friendlylink_xl.png') no-repeat;
+	background: @iconBackground;
+	background-position: 0 -32px;
 	cursor: pointer;
 	transform: rotate(180deg);
 }

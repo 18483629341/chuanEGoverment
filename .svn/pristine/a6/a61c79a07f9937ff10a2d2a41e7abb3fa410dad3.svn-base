@@ -92,19 +92,19 @@
 								</div>
 							</div>
 							<div class="item">
-								<img data-src="./img/carousel0.png" alt="...">
+								<img src="./img/carousel0.png" alt="...">
 								<div class="carousel-caption selfCarouselCaption">
 									<a href="#" class="linkA">2</a>
 								</div>
 							</div>
 							<div class="item">
-								<img data-src="./img/carousel0.png" alt="...">
+								<img src="./img/carousel0.png" alt="...">
 								<div class="carousel-caption selfCarouselCaption">
 									<a href="#" class="linkA">3</a>
 								</div>
 							</div>
 							<div class="item">
-								<img data-src="./img/carousel0.png" alt="...">
+								<img src="./img/carousel0.png" alt="...">
 								<div class="carousel-caption selfCarouselCaption">
 									<a href="#" class="linkA">4</a>
 								</div>

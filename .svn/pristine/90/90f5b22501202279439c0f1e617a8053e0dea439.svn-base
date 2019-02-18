@@ -1,0 +1,62 @@
+.body0 {
+  min-width: 1200px;
+}
+.header {
+  height: 50px;
+  background: url('../img/top_bg.png') repeat-x;
+}
+.header .headerMain {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header .HeaderLeftCon {
+  width: 450px;
+  height: 100%;
+}
+.header .HeaderRightCon {
+  width: 267px;
+  height: 100%;
+}
+.section {
+  height: 1065px;
+  background: url('../img/bg_01.png') no-repeat;
+  background-size: 100% auto;
+}
+.section .headerSection,
+.section .mainContent {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section .headerSection {
+  height: 146px;
+  padding: 40px 0;
+}
+.section .mainContent {
+  overflow: hidden;
+  padding: 20px;
+}
+.section .topSection {
+  height: 372px;
+  margin-bottom: 20px;
+}
+.section .centerSection {
+  height: 330px;
+  overflow: hidden;
+}
+.section .bottomSection {
+  height: 136px;
+}
+.section .leftRow {
+  width: 760px;
+  height: 100%;
+}
+.section .RightRow {
+  width: 380px;
+  height: 100%;
+}
+.footer {
+  height: 60px;
+  background: #e9f1f5;
+  border-top: 2px solid #0c9cef;
+}

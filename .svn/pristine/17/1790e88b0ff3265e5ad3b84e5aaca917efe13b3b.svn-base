@@ -1,5 +1,3 @@
-
-//最多显示两列，溢出的用省略号表示
 var flag=true;
 var heightArr=[];
 function onlyTwoLine(tag){
@@ -28,11 +26,4 @@ function onlyTwoLine(tag){
 	});
 	
 	flag=false;
-}
-function loadImg(){
-	$('img[data-src]').each(function(i, obj){
-		var _src=$(this).attr("data-src");
-		$(this).attr("src",_src);
-
-	});
 }
