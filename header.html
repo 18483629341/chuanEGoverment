@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>电子政务</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<style>
+		.MediaLi {
+			position: relative;
+		}
+
+		.HoverDiv {
+			position: absolute;
+			padding: 25px;
+			background: #fff;
+			display: none;
+			top: 50px;
+			left: 0;
+		}
+
+		.MediaLi:hover .HoverDiv {
+			display: block;
+		}
+
+		.HoverTitle {
+			text-align: center;
+			height: 18px;
+			line-height: 18px;
+			font-size: 14px;
+			font-weight: 700;
+		}
+
+		.WeiboHoverDiv .HoverTitle {
+			color: #5da324;
+		}
+
+		.HoverImg {
+			width: 107px;
+			height: auto;
+			display: inline-block;
+		}
+		.HoverLink{
+			display: inline-block;
+			width: 107px;
+			height: 107px;
+		}
+		.HoverImg+.HoverImg,.HoverLink+.HoverLink {
+			margin-left: 15px;
+		}
+        
+		.WeixinHoverDiv {
+			width: 285px;
+		}
+		.PhoneHoverDiv {
+			width: 284px;
+		}
+	</style>
+</head>
+
+<body class="body0">
+	<div>
+		<header class="header">
+			<div class="headerMain">
+				<div class="HeaderLeftCon floatLeft">
+					<ol class="MediaList">
+						<li class="MediaLi">
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+									<i class="IconMedia IconWeibo"></i>
+									<span class="MediaText">政务微博</span>
+								</a>
+							</div>
+							<div class="HoverDiv WeiboHoverDiv">
+								<p class="HoverTitle">微信二维码</p>
+								<img class="HoverImg" src="./img/wx.jpg" alt="">
+							</div>
+						</li>
+						<li class="MediaLi">
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+
+									<i class="IconMedia IconWeixin"></i>
+									<span class="MediaText">政务微信</span>
+								</a>
+							</div>
+							<div class="HoverDiv WeixinHoverDiv">
+								<a class="HoverLink" href="#"><img class="HoverImg" src="./img/wb.jpg" alt=""></a>
+								<a class="HoverLink" href="#"><img class="HoverImg" src="./img/wb1.jpg" alt=""></a>
+							</div>
+						</li>
+						<li class="MediaLi">
+							<div class="MediaLiContent">
+								<a href="#" class="MediaHref">
+									<i class="IconMedia IconPhone"></i>
+									<span class="MediaText">手机客户端</span>
+								</a>
+							</div>
+							<div class="HoverDiv PhoneHoverDiv">
+								<img class="HoverImg" src="./img/App.png" alt="">
+								<img class="HoverImg" src="./img/App1.png" alt="">
+							</div>
+						</li>
+					</ol>
+				</div>
+
+			</div>
+		</header>
+
+	</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
